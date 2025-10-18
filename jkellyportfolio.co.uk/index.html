@@ -1,0 +1,1949 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Functional Able Goat</title>
+    <meta property="og:title" content="Functional Able Goat" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container1">
+        <navigation-wrapper
+          class="navigation-wrapper"
+          rootclassname="navigationundefined"
+        >
+          <!--Navigation component-->
+          <div class="navigation-container1 navigationroot-class-name1">
+            <div class="navigation-container2">
+              <div class="navigation-container3">
+                <style>
+                          @keyframes navigation-pulse {0%,100% {opacity: 0.6;
+                  transform: scale(1);}
+                  50% {opacity: 0.8;
+                  transform: scale(1.1);}}@keyframes navigation-ring-pulse {0%,100% {transform: scale(1);
+                  opacity: 0.3;}
+                  50% {transform: scale(1.08);
+                  opacity: 0.5;}}
+                </style>
+              </div>
+            </div>
+            <div class="navigation-container4">
+              <div class="navigation-container5">
+                <style>
+                  @media (min-width: 992px) {
+                  .navigation__toggle {
+                    display: none;
+                  }
+                  .navigation__overlay {
+                    display: none;
+                  }
+                  }
+                  @media (prefers-reduced-motion: reduce) {
+                  .navigation__toggle, .navigation__sidebar, .navigation__menu-link, .navigation__social-link, .navigation__profile-image {
+                    transition: none;
+                  }
+                  .navigation__gradient-accent, .navigation__profile-ring {
+                    animation: none;
+                  }
+                  }
+                </style>
+              </div>
+            </div>
+            <div class="navigation-container6">
+              <div class="navigation-container7">
+                <script defer="" data-name="navigation">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      // Navigation functionality
+                      const navigationToggle = document.getElementById("navigationToggle")
+                      const navigationMenu = document.getElementById("navigationMenu")
+                      const navigationOverlay = document.getElementById("navigationOverlay")
+                      const navigationLinks = navigationMenu.querySelectorAll(
+                        ".navigation__menu-link"
+                      )
+
+                      // Toggle mobile navigation
+                      function toggleNavigation() {
+                        const isOpen = navigationToggle.getAttribute("aria-expanded") === "true"
+
+                        navigationToggle.setAttribute("aria-expanded", !isOpen)
+                        navigationMenu.classList.toggle("navigation__sidebar--open")
+                        navigationOverlay.classList.toggle("navigation__overlay--visible")
+
+                        // Prevent body scroll when menu is open
+                        if (!isOpen) {
+                          document.body.style.overflow = "hidden"
+                        } else {
+                          document.body.style.overflow = ""
+                        }
+                      }
+
+                      // Close navigation
+                      function closeNavigation() {
+                        navigationToggle.setAttribute("aria-expanded", "false")
+                        navigationMenu.classList.remove("navigation__sidebar--open")
+                        navigationOverlay.classList.remove("navigation__overlay--visible")
+                        document.body.style.overflow = ""
+                      }
+
+                      // Event listeners
+                      navigationToggle.addEventListener("click", toggleNavigation)
+                      navigationOverlay.addEventListener("click", closeNavigation)
+
+                      // Close navigation when clicking on a link (mobile)
+                      navigationLinks.forEach((link) => {
+                        link.addEventListener("click", (e) => {
+                          // Only close on mobile
+                          if (window.innerWidth <= 991) {
+                            closeNavigation()
+                          }
+
+                          // Update active state
+                          navigationLinks.forEach((l) =>
+                            l.classList.remove("navigation__menu-link--active")
+                          )
+                          link.classList.add("navigation__menu-link--active")
+                        })
+                      })
+
+                      // Handle escape key
+                      document.addEventListener("keydown", (e) => {
+                        if (
+                          e.key === "Escape" &&
+                          navigationToggle.getAttribute("aria-expanded") === "true"
+                        ) {
+                          closeNavigation()
+                        }
+                      })
+
+                      // Close navigation on window resize
+                      let resizeTimer
+                      window.addEventListener("resize", () => {
+                        clearTimeout(resizeTimer)
+                        resizeTimer = setTimeout(() => {
+                          if (window.innerWidth > 991) {
+                            closeNavigation()
+                          }
+                        }, 250)
+                      })
+
+                      // Highlight active section on scroll
+                      const observerOptions = {
+                        root: null,
+                        rootMargin: "-20% 0px -70% 0px",
+                        threshold: 0,
+                      }
+
+                      const observerCallback = (entries) => {
+                        entries.forEach((entry) => {
+                          if (entry.isIntersecting) {
+                            const sectionId = entry.target.getAttribute("id")
+                            navigationLinks.forEach((link) => {
+                              const href = link.getAttribute("href").substring(1)
+                              if (href === sectionId) {
+                                navigationLinks.forEach((l) =>
+                                  l.classList.remove("navigation__menu-link--active")
+                                )
+                                link.classList.add("navigation__menu-link--active")
+                              }
+                            })
+                          }
+                        })
+                      }
+
+                      const observer = new IntersectionObserver(observerCallback, observerOptions)
+
+                      // Observe sections when they exist
+                      const observeSections = () => {
+                        const sections = document.querySelectorAll(
+                          '[id^="home"], [id^="about"], [id^="skills"], [id^="portfolio"], [id^="contact"]'
+                        )
+                        sections.forEach((section) => observer.observe(section))
+                      }
+
+                      // Try to observe sections immediately and after a delay
+                      observeSections()
+                      setTimeout(observeSections, 1000)
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+            <nav
+              id="navigation"
+              aria-label="Main navigation"
+              class="navigation"
+            >
+              <button
+                id="navigationToggle"
+                aria-label="Toggle navigation menu"
+                aria-controls="navigationMenu"
+                aria-expanded="false"
+                class="navigation__toggle"
+              >
+                <span class="navigation-navigationtoggle-icon1">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M4 5h16M4 12h16M4 19h16"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="navigation-navigationtoggle-icon2">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18 6L6 18M6 6l12 12"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+              <aside id="navigationMenu" class="navigation__sidebar">
+                <div class="navigation__backdrop"></div>
+                <div class="navigation__gradient-accent"></div>
+                <div class="navigation__profile">
+                  <div class="navigation__profile-image-wrapper">
+                    <img
+                      alt="Professional portrait"
+                      src="\Images\IMG_5029.jpeg"
+                      width="120"
+                      height="120"
+                      loading="eager"
+                      class="navigation__profile-image"
+                    />
+                    <div class="navigation__profile-ring"></div>
+                  </div>
+                  <h2 class="navigation__profile-name">James Kelly</h2>
+                  <p class="navigation__profile-tagline">
+                    Marketing &amp; Data Analytics
+                  </p>
+                </div>
+                <div class="navigation__social">
+                  <a
+                    href="https://www.linkedin.com/in/james-kelly-260073359/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <div
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label="LinkedIn profile"
+                      class="navigation__social-link"
+                    >
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                          ></path>
+                          <circle r="2" cx="4" cy="4"></circle>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <div
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label="Instagram profile"
+                      class="navigation__social-link"
+                    >
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <rect
+                            x="2"
+                            y="2"
+                            rx="5"
+                            ry="5"
+                            width="20"
+                            height="20"
+                          ></rect>
+                          <path
+                            d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                          ></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <ul role="list" class="navigation__menu">
+                  <li class="navigation__menu-item">
+                    <a href="#home" aria-current="page">
+                      <div
+                        class="navigation__menu-link navigation__menu-link--active"
+                      >
+                        <span class="navigation__menu-icon">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"
+                              ></path>
+                              <path
+                                d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                              ></path>
+                            </g>
+                          </svg>
+                        </span>
+                        <span class="navigation__menu-text">Home</span>
+                        <span class="navigation__menu-indicator"></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="navigation__menu-item">
+                    <a href="#about">
+                      <div class="navigation__menu-link">
+                        <span class="navigation__menu-icon">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"
+                              ></path>
+                              <circle r="4" cx="12" cy="7"></circle>
+                            </g>
+                          </svg>
+                        </span>
+                        <span class="navigation__menu-text">About</span>
+                        <span class="navigation__menu-indicator"></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="navigation__menu-item">
+                    <a href="resume.html">
+                      <div class="navigation__menu-link">
+                        <span class="navigation__menu-icon">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
+                              ></path>
+                              <rect
+                                x="2"
+                                y="6"
+                                rx="2"
+                                width="20"
+                                height="14"
+                              ></rect>
+                            </g>
+                          </svg>
+                        </span>
+                        <span class="navigation__menu-text">Resume</span>
+                        <span class="navigation__menu-indicator"></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="navigation__menu-item">
+                    <a href="#portfolio">
+                      <div class="navigation__menu-link">
+                        <span class="navigation__menu-icon">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="navigation__menu-text">Portfolio</span>
+                        <span class="navigation__menu-indicator"></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="navigation__menu-item">
+                    <a href="#contact">
+                      <div class="navigation__menu-link">
+                        <span class="navigation__menu-icon">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                              ></path>
+                              <rect
+                                x="2"
+                                y="4"
+                                rx="2"
+                                width="20"
+                                height="16"
+                              ></rect>
+                            </g>
+                          </svg>
+                        </span>
+                        <span class="navigation__menu-text">Contact</span>
+                        <span class="navigation__menu-indicator"></span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </aside>
+              <div
+                id="navigationOverlay"
+                aria-hidden="true"
+                class="navigation__overlay"
+              ></div>
+            </nav>
+          </div>
+        </navigation-wrapper>
+        <div class="home-container2">
+          <div class="home-container3">
+            <style>
+                      @keyframes heroEntrance {from {opacity: 0;
+              transform: translateX(-8%) translateY(12px);}
+              to {opacity: 1;
+              transform: translateX(-8%) translateY(0);}}@keyframes fadeInUp {from {opacity: 0;
+              transform: translateY(8px);}
+              to {opacity: 1;
+              transform: translateY(0);}}
+            </style>
+          </div>
+        </div>
+        <div class="home-container4">
+          <div class="home-container5">
+            <style>
+              @media (prefers-reduced-motion: reduce) {
+              * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+              }
+              .hero-panel {
+                animation: none;
+                opacity: 1;
+                transform: translateX(-8%);
+              }
+              .stat-card, .portrait-card {
+                animation: none;
+                opacity: 1;
+                transform: none;
+              }
+              }
+            </style>
+          </div>
+        </div>
+        <div class="home-container6">
+          <div class="home-container7">
+            <script defer="" data-name="portfolio-homepage">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  // Intersection Observer for stat cards entrance
+                  const observerOptions = {
+                    threshold: 0.2,
+                    rootMargin: "0px 0px -50px 0px",
+                  }
+
+                  const statCards = document.querySelectorAll(".stat-card")
+                  const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                        entry.target.style.opacity = "1"
+                        entry.target.style.transform = "translateY(0)"
+                        observer.unobserve(entry.target)
+                      }
+                    })
+                  }, observerOptions)
+
+                  statCards.forEach((card) => {
+                    observer.observe(card)
+                  })
+
+                  // Form submission handler
+                  const contactForm = document.querySelector(".contact-form")
+                  if (contactForm) {
+                    contactForm.addEventListener("submit", (e) => {
+                      e.preventDefault()
+
+                      const formData = new FormData(contactForm)
+                      const data = Object.fromEntries(formData)
+
+                      // Simulate form submission
+                      const submitButton = contactForm.querySelector('button[type="submit"]')
+                      const originalText = submitButton.innerHTML
+                      submitButton.innerHTML = "<span>Sending...</span>"
+                      submitButton.disabled = true
+
+                      setTimeout(() => {
+                        submitButton.innerHTML = "<span>Message sent!</span>"
+                        contactForm.reset()
+
+                        setTimeout(() => {
+                          submitButton.innerHTML = originalText
+                          submitButton.disabled = false
+                        }, 2000)
+                      }, 1000)
+                    })
+                  }
+
+                  // Carousel auto-scroll hint (subtle)
+                  const carousel = document.querySelector(".portfolio-carousel")
+                  if (carousel && window.innerWidth <= 991) {
+                    let scrollHintShown = false
+
+                    const showScrollHint = () => {
+                      if (!scrollHintShown) {
+                        carousel.style.boxShadow = "inset -20px 0 20px -20px rgba(0,0,0,0.2)"
+                        scrollHintShown = true
+                      }
+                    }
+
+                    setTimeout(showScrollHint, 2000)
+
+                    carousel.addEventListener("scroll", () => {
+                      if (carousel.scrollLeft > 10) {
+                        carousel.style.boxShadow = "none"
+                      }
+                    })
+                  }
+                })()
+              });
+            </script>
+          </div>
+        </div>
+        <section id="hero" aria-labelledby="hero-name" class="hero">
+          <div class="home-hero-rail hero-rail"></div>
+          <div class="hero-main">
+            <div
+              role="img"
+              aria-label="Modern professional workspace"
+              class="home-hero-image hero-image"
+            ></div>
+            <div class="hero-panel">
+              <p class="hero-greeting">Hi — I'm James Kelly</p>
+              <h1 id="hero-name" class="hero-title">
+                I convert analytical insights into clear, measurable strategies
+                that enhance business performance.
+              </h1>
+              <p class="hero-tagline">
+                Consumer Behaviour &amp; Marketing student&nbsp; &nbsp; &nbsp;
+                Data Analytics Intern at Keysight
+              </p>
+              <div class="hero-ctas">
+                <a href="#about">
+                  <div class="btn-primary btn">
+                    <span>Explore my work</span>
+                  </div>
+                </a>
+                <a href="#contact">
+                  <div class="btn-outline btn"><span>Get in touch</span></div>
+                </a>
+              </div>
+              <div class="hero-links">
+                <a href="#about">
+                  <div class="quick-link"><span>About</span></div>
+                </a>
+                <span class="link-divider">•</span>
+                <a href="resume.html">
+                  <div class="quick-link"><span>Resume</span></div>
+                </a>
+                <span class="link-divider">•</span>
+                <a href="#portfolio">
+                  <div class="quick-link"><span>Portfolio</span></div>
+                </a>
+                <span class="link-divider">•</span>
+                <a href="#contact">
+                  <div class="quick-link"><span>Contact</span></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="about"
+          aria-labelledby="about-heading"
+          class="about-section"
+        >
+          <div class="about-container">
+            <div class="about-content">
+              <h2 id="about-heading" class="section-title">About</h2>
+              <div class="about-bio">
+                <p>
+                  I’m James, a Consumer Behaviour and Marketing student at the
+                  University of Reading, focused on applying data-driven insight
+                  to real-world marketing challenges. My studies combine
+                  marketing strategy, statistics, and psychology, giving me a
+                  strong foundation in understanding behaviour through both
+                  analytical and creative lenses.
+                </p>
+                <p>
+                  Currently, I’m completing a 13-month Data Analytics Internship
+                  at Keysight Technologies, where I leverage the full analytics
+                  suite, including Adobe Analytics, Domo, and Excel, to turn
+                  complex data into clear strategic insights. I create
+                  executive-level reports and presentations, supporting global
+                  marketing teams with actionable recommendations. My experience
+                  also extends to attending 6G industry events, deepening my
+                  understanding of how emerging technologies shape market
+                  dynamics. This blend of academic and professional experience
+                  has honed my ability to translate analytics into measurable
+                  business outcomes.
+                </p>
+              </div>
+              <div class="about-contacts">
+                <h3 class="contacts-title">Connect</h3>
+                <ul class="contacts-list">
+                  <li>
+                    <a href="https://www.linkedin.com/in/james-kelly-260073359/">
+                      <div aria-label="LinkedIn profile" class="contact-item">
+                        <svg
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                            ></path>
+                            <circle r="2" cx="4" cy="4"></circle>
+                          </g>
+                        </svg>
+                        <span>LinkedIn</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://instagram.com">
+                      <div aria-label="Instagram profile" class="contact-item">
+                        <svg
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <rect
+                              x="2"
+                              y="2"
+                              rx="5"
+                              ry="5"
+                              width="20"
+                              height="20"
+                            ></rect>
+                            <path
+                              d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                            ></path>
+                          </g>
+                        </svg>
+                        <span>Instagram</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:hello@scrollspace.example?subject=">
+                      <div aria-label="Email address" class="contact-item">
+                        <svg
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                            ></path>
+                            <rect
+                              x="2"
+                              y="4"
+                              rx="2"
+                              width="20"
+                              height="16"
+                            ></rect>
+                          </g>
+                        </svg>
+                        <span>James_Kelly12@outlook.com</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-aside">
+              <div class="portrait-card">
+                <img
+                  alt="ScrollSpace professional portrait"
+                  src="\Images\IMG_5045.jpeg"
+                  loading="lazy"
+                  class="portrait-image"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="stats"
+          role="region"
+          aria-labelledby="stats-heading"
+          class="stats-section"
+        >
+          <div class="stats-container">
+            <h2 id="stats-heading" class="section-title">
+              Impact by the numbers
+            </h2>
+            <div class="stats-grid">
+              <article
+                role="group"
+                tabindex="0"
+                aria-label="42 events attended"
+                class="stat-card"
+              >
+                <div class="stat-icon">
+                  <svg
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M8 2v4m8-4v4"></path>
+                      <rect x="3" y="4" rx="2" width="18" height="18"></rect>
+                      <path d="M3 10h18"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="stat-value"><span>42</span></div>
+                <div class="stat-label"><span>Events Attended</span></div>
+                <p class="stat-note">
+                  Curated industry conferences, workshops, and client briefings
+                </p>
+              </article>
+              <article
+                role="group"
+                tabindex="0"
+                aria-label="1,200+ people connected"
+                class="stat-card"
+              >
+                <div class="stat-icon">
+                  <svg
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"
+                      ></path>
+                      <circle r="4" cx="9" cy="7"></circle>
+                    </g>
+                  </svg>
+                </div>
+                <div class="stat-value"><span>1,200+</span></div>
+                <div class="stat-label"><span>People Connected</span></div>
+                <p class="stat-note">
+                  Professionals, stakeholders, and collaborators across
+                  marketing and analytics
+                </p>
+              </article>
+              <article
+                role="group"
+                tabindex="0"
+                aria-label="85 projects delivered"
+                class="stat-card"
+              >
+                <div class="stat-icon">
+                  <svg
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
+                      ></path>
+                      <rect x="2" y="6" rx="2" width="20" height="14"></rect>
+                    </g>
+                  </svg>
+                </div>
+                <div class="stat-value"><span>85</span></div>
+                <div class="stat-label"><span>Projects Delivered</span></div>
+                <p class="stat-note">
+                  End-to-end projects combining consumer insight, strategy, and
+                  measurable outcomes
+                </p>
+              </article>
+              <article
+                role="group"
+                tabindex="0"
+                aria-label="240+ analytics reports"
+                class="stat-card"
+              >
+                <div class="stat-icon">
+                  <svg
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                      <path d="m19 9l-5 5l-4-4l-3 3"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="stat-value"><span>240+</span></div>
+                <div class="stat-label"><span>Analytics Reports</span></div>
+                <p class="stat-note">
+                  Bespoke analyses and dashboards informing business decisions
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section
+          id="skills"
+          aria-labelledby="skills-heading"
+          class="skills-section"
+        >
+          <div class="skills-container">
+            <div class="skills-header">
+              <h2 id="skills-heading" class="section-title">Skills</h2>
+              <p class="section-subtitle">
+                <span>
+                  Blending analytical precision with design thinking to deliver
+                  insight-driven reports, marketing strategies, and measurable
+                  business impact.
+                </span>
+                <span></span>
+                Trusted toolset for data-led decisions and polished deliverables
+                — proven across research, analytics and creative execution.
+              </p>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="card-header">
+                  <div class="card-icon">
+                    <svg
+                      width="28"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="28"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m16 18l6-6l-6-6M8 6l-6 6l6 6"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="card-title">Data &amp; Analytics</h3>
+                </div>
+                <div class="card-content">
+                  <div class="badge-list">
+                    <span class="badge">Excel</span>
+                    <span class="badge">Adobe Analytics</span>
+                    <span class="badge">Domo</span>
+                    <span class="badge">CrazyEgg</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="card-header">
+                  <div class="card-icon">
+                    <svg
+                      width="28"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="28"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M12 22a1 1 0 0 1 0-20a10 9 0 0 1 10 9a5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"
+                        ></path>
+                        <circle
+                          r=".5"
+                          cx="13.5"
+                          cy="6.5"
+                          fill="currentColor"
+                        ></circle>
+                        <circle
+                          r=".5"
+                          cx="17.5"
+                          cy="10.5"
+                          fill="currentColor"
+                        ></circle>
+                        <circle
+                          r=".5"
+                          cx="6.5"
+                          cy="12.5"
+                          fill="currentColor"
+                        ></circle>
+                        <circle
+                          r=".5"
+                          cx="8.5"
+                          cy="7.5"
+                          fill="currentColor"
+                        ></circle>
+                      </g>
+                    </svg>
+                  </div>
+                  <h3 class="card-title">Design &amp; Prototyping</h3>
+                </div>
+                <div class="card-content">
+                  <div class="badge-list">
+                    <span class="badge">Powerpoint</span>
+                    <span class="badge">Canva</span>
+                    <span class="badge">Adobe Target</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="card-header">
+                  <div class="card-icon">
+                    <svg
+                      width="28"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="28"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m21 21l-4.34-4.34"></path>
+                        <circle r="8" cx="11" cy="11"></circle>
+                      </g>
+                    </svg>
+                  </div>
+                  <h3 class="card-title">Research &amp; Insights (no clue)</h3>
+                </div>
+                <div class="card-content">
+                  <div class="badge-list">
+                    <span class="badge">Qualtrics</span>
+                    <span class="badge">SurveyMonkey</span>
+                    <span class="badge">NVivo</span>
+                    <span class="badge">SPSS</span>
+                    <span class="badge">Hotjar</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="card-header">
+                  <div class="card-icon">
+                    <svg
+                      width="28"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="28"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"
+                        ></path>
+                        <path
+                          d="M6 14a12 12 0 0 0 2.4 7.2a2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14M8 6v8"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <h3 class="card-title">Marketing &amp; Automation</h3>
+                </div>
+                <div class="card-content">
+                  <div class="badge-list">
+                    <span class="badge">Eloqua</span>
+                    <span class="badge">Adobe Target</span>
+                    <span class="badge">Credly</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="card-header">
+                  <div class="card-icon">
+                    <svg
+                      width="28"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="28"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0a2.34 2.34 0 0 0 3.319 1.915a2.34 2.34 0 0 1 2.33 4.033a2.34 2.34 0 0 0 0 3.831a2.34 2.34 0 0 1-2.33 4.033a2.34 2.34 0 0 0-3.319 1.915a2.34 2.34 0 0 1-4.659 0a2.34 2.34 0 0 0-3.32-1.915a2.34 2.34 0 0 1-2.33-4.033a2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"
+                        ></path>
+                        <circle r="3" cx="12" cy="12"></circle>
+                      </g>
+                    </svg>
+                  </div>
+                  <h3 class="card-title">Collaboration &amp; Workflow</h3>
+                </div>
+                <div class="card-content">
+                  <div class="badge-list">
+                    <span class="badge">Notion</span>
+                    <span class="badge">Asana</span>
+                    <span class="badge">GitHub</span>
+                  </div>
+                </div>
+              </div>
+              <div class="featured-card skill-card">
+                <div class="card-header">
+                  <div class="card-icon">
+                    <svg
+                      width="28"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="28"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 6L9 17l-5-5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="card-title">Certifications &amp; Standards</h3>
+                </div>
+                <div class="card-content">
+                  <div class="badge-list">
+                    <span class="badge certified">Google Analytics IQ</span>
+                    <span class="badge certified">HubSpot Inbound</span>
+                    <span class="badge certified">GDPR Compliance</span>
+                  </div>
+                  <p class="card-outcome">
+                    Each badge reflects real projects and measurable outcomes —
+                    from audience segmentation and A/B testing to interactive
+                    prototypes and executive dashboards. Selected for
+                    reliability, scalability and clear ROI.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="portfolio"
+          aria-labelledby="portfolio-heading"
+          class="portfolio-section"
+        >
+          <div class="portfolio-container">
+            <div class="portfolio-header">
+              <h2 id="portfolio-heading" class="section-title">Portfolio</h2>
+              <p class="section-subtitle">
+                A curated selection of projects that demonstrate strategic
+                thinking, measurable impact, and clean execution.
+              </p>
+            </div>
+            <div class="portfolio-grid">
+              <div class="portfolio-carousel">
+                <article class="project-card">
+                  <div class="home-project-image1 project-image"></div>
+                  <div class="project-content">
+                    <h3 class="project-title">Analytics Dashboard</h3>
+                    <p class="project-brief">
+                      Organised most important Analytics for future use
+                    </p>
+                    <div class="project-outcome">
+                      <span class="outcome-metric">+18% attendance</span>
+                      <span class="outcome-metric">-30% reporting time</span>
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card">
+                  <div class="home-project-image2 project-image"></div>
+                  <div class="project-content">
+                    <h3 class="project-title">Executive Reports</h3>
+                    <p class="project-brief">
+                      Created detailed reports on Analytics for execs
+                    </p>
+                    <div class="project-outcome">
+                      <span class="outcome-metric">3 personas</span>
+                      <span class="outcome-metric">+22% ROI lift</span>
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card">
+                  <div class="home-project-image3 project-image"></div>
+                  <div class="project-content">
+                    <h3 class="project-title">Keysight 6G event</h3>
+                    <p class="project-brief">6G Event in May 2026</p>
+                    <div class="project-outcome">
+                      <span class="outcome-metric">Multi-city</span>
+                      <span class="outcome-metric">+25% efficiency</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <article class="featured-project">
+                <div class="home-featured-image featured-image"></div>
+                <div class="featured-content">
+                  <div class="featured-badge"><span>Featured</span></div>
+                  <h3 class="featured-title">Product Launch Analytics</h3>
+                  <p class="featured-subtitle">Go-to-Market Measurement</p>
+                  <p class="featured-description">
+                    Built launch dashboards and A/B testing frameworks to
+                    monitor product adoption and early churn signals. Identified
+                    two friction points that reduced early churn by 14% after
+                    targeted fixes.
+                  </p>
+                  <div class="featured-meta">
+                    <div class="meta-item">
+                      <span class="meta-label">Role</span>
+                      <span class="meta-value">Analytics Architect</span>
+                    </div>
+                    <div class="meta-item">
+                      <span class="meta-label">Impact</span>
+                      <span class="meta-value">-14% churn reduction</span>
+                    </div>
+                  </div>
+                  <a href="#contact">
+                    <div class="btn-primary btn">
+                      <span>Request case study</span>
+                    </div>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section
+          id="contact"
+          aria-labelledby="contact-heading"
+          class="contact-section"
+        >
+          <div class="contact-container">
+            <div class="contact-grid">
+              <div class="contact-intro">
+                <h2 id="contact-heading" class="section-title">
+                  Let's Collaborate
+                </h2>
+                <p class="intro-text">
+                  I specialize in transforming complex analytics into clear,
+                  actionable understanding. If you’re looking to learn Adobe
+                  Analytics or need guidance on analytical reporting, I can help
+                  turn data into clarity and confidence.
+                </p>
+                <div class="availability-card">
+                  <h3 class="card-subtitle">Availability</h3>
+                  <p class="availability-text">
+                    Training sessions, workshops, and reporting consultations.
+                    Open to remote or hybrid collaborations with teams and
+                    individuals.
+                  </p>
+                </div>
+                <div class="quick-links">
+                  <h3 class="card-subtitle">Quick connections</h3>
+                  <ul class="links-list">
+                    <li>
+                      <a href="https://www.linkedin.com/in/james-kelly-260073359/">
+                        <div class="link-item">
+                          <svg
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                              ></path>
+                              <circle r="2" cx="4" cy="4"></circle>
+                            </g>
+                          </svg>
+                          <span>LinkedIn — professional enquiries</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://instagram.com">
+                        <div class="link-item">
+                          <svg
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <rect
+                                x="2"
+                                y="2"
+                                rx="5"
+                                ry="5"
+                                width="20"
+                                height="20"
+                              ></rect>
+                              <path
+                                d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                              ></path>
+                            </g>
+                          </svg>
+                          <span>Instagram — recent work</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contact-form-card">
+                <form
+                  role="form"
+                  aria-label="Contact form"
+                  class="contact-form"
+                >
+                  <div class="form-header">
+                    <h3 class="form-title">Send a message</h3>
+                    <p class="form-subtitle">Quick replies within 48 hours</p>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="contact-name" class="form-label">Name</label>
+                      <input
+                        type="text"
+                        id="contact-name"
+                        name="true"
+                        required="true"
+                        aria-required="true"
+                        class="form-input"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="contact-email" class="form-label">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        id="contact-email"
+                        name="email"
+                        required="true"
+                        aria-required="true"
+                        class="form-input"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-company" class="form-label">
+                      <span>Company</span>
+                      <span class="home-optional">(optional)</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="contact-company"
+                      name="company"
+                      class="form-input"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-message" class="form-label">
+                      Project brief / Message
+                    </label>
+                    <textarea
+                      id="contact-message"
+                      name="message"
+                      rows="5"
+                      required="true"
+                      aria-required="true"
+                      class="form-textarea"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-method" class="form-label">
+                      Preferred contact method
+                    </label>
+                    <select
+                      id="contact-method"
+                      name="contact-method"
+                      class="form-select"
+                    >
+                      <option value="email">Email</option>
+                      <option value="phone">Phone</option>
+                      <option value="linkedin">LinkedIn</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn-lg btn-primary btn">
+                    <span>Send message</span>
+                    <svg
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11zm7.318-19.539l-10.94 10.939"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </button>
+                  <p class="privacy-note">
+                    Your message is handled confidentially. I'll only use your
+                    details to respond and manage the project discussion.
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer-wrapper class="footer-wrapper">
+          <!--Footer component-->
+          <div class="footer-container1">
+            <div class="footer-container2">
+              <div class="footer-container3">
+                <style>
+                          @keyframes footer-heart-pulse {0%,100% {transform: scale(1);}
+                  50% {transform: scale(1.15);}}
+                </style>
+              </div>
+            </div>
+            <div class="footer-container4">
+              <div class="footer-container5">
+                <style>
+                  @media (prefers-reduced-motion: reduce) {
+                  .footer__social-link, .footer__social-link::before, .footer__social-link svg, .footer__nav-link, .footer__nav-link::before, .footer__contact-item, .footer__contact-icon, .footer__contact-link, .footer__bottom-link, .footer__back-to-top, .footer__back-to-top::before, .footer__back-to-top svg {
+                    transition: none;
+                  }
+                  .footer__heart-icon {
+                    animation: none;
+                  }
+                  }
+                </style>
+              </div>
+            </div>
+            <div class="footer-container6">
+              <div class="footer-container7">
+                <script defer="" data-name="footer">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      // Smooth scroll behavior for back-to-top and footer links
+                      const footer = document.getElementById("footer")
+                      const backToTopButton = footer.querySelector(".footer__back-to-top")
+                      const footerLinks = footer.querySelectorAll('a[href^="#"]')
+
+                      // Handle all anchor links with smooth scroll
+                      footerLinks.forEach((link) => {
+                        link.addEventListener("click", function (e) {
+                          const href = this.getAttribute("href")
+
+                          // Only handle internal anchor links
+                          if (href && href.startsWith("#")) {
+                            const targetId = href.substring(1)
+                            const targetElement = document.getElementById(targetId)
+
+                            if (targetElement) {
+                              e.preventDefault()
+                              targetElement.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start",
+                              })
+
+                              // Update URL without jumping
+                              if (history.pushState) {
+                                history.pushState(null, null, href)
+                              }
+
+                              // Focus management for accessibility
+                              targetElement.focus({ preventScroll: true })
+                            }
+                          }
+                        })
+                      })
+
+                      // Enhanced back-to-top button with scroll visibility
+                      let lastScrollTop = 0
+                      const showBackToTopThreshold = 500
+
+                      function handleBackToTopVisibility() {
+                        const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+
+                        if (scrollTop > showBackToTopThreshold) {
+                          backToTopButton.style.opacity = "1"
+                          backToTopButton.style.pointerEvents = "auto"
+                        } else {
+                          backToTopButton.style.opacity = "0.7"
+                          backToTopButton.style.pointerEvents = "auto"
+                        }
+
+                        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop
+                      }
+
+                      // Throttle scroll events for performance
+                      let scrollTimeout
+                      window.addEventListener(
+                        "scroll",
+                        function () {
+                          if (scrollTimeout) {
+                            window.cancelAnimationFrame(scrollTimeout)
+                          }
+
+                          scrollTimeout = window.requestAnimationFrame(function () {
+                            handleBackToTopVisibility()
+                          })
+                        },
+                        { passive: true }
+                      )
+
+                      // Initialize visibility on load
+                      handleBackToTopVisibility()
+
+                      // Add keyboard navigation enhancement for social links
+                      const socialLinks = footer.querySelectorAll(".footer__social-link")
+                      socialLinks.forEach((link, index) => {
+                        link.addEventListener("keydown", function (e) {
+                          if (e.key === "ArrowRight" && index < socialLinks.length - 1) {
+                            e.preventDefault()
+                            socialLinks[index + 1].focus()
+                          } else if (e.key === "ArrowLeft" && index > 0) {
+                            e.preventDefault()
+                            socialLinks[index - 1].focus()
+                          }
+                        })
+                      })
+
+                      // Intersection Observer for footer entrance animation
+                      const footerObserver = new IntersectionObserver(
+                        (entries) => {
+                          entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                              entry.target.style.opacity = "1"
+                              entry.target.style.transform = "translateY(0)"
+                            }
+                          })
+                        },
+                        {
+                          threshold: 0.1,
+                          rootMargin: "0px 0px -50px 0px",
+                        }
+                      )
+
+                      // Observe footer sections with stagger effect
+                      const footerSections = footer.querySelectorAll(
+                        ".footer__brand-column, .footer__nav-column, .footer__contact-column"
+                      )
+                      footerSections.forEach((section, index) => {
+                        section.style.opacity = "0"
+                        section.style.transform = "translateY(1.5rem)"
+                        section.style.transition = `opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1) ${
+                          index * 0.1
+                        }s, transform 0.6s cubic-bezier(0.4, 0, 0.2, 1) ${index * 0.1}s`
+                        footerObserver.observe(section)
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+            <footer id="footer" class="footer">
+              <div aria-hidden="true" class="footer__background-pattern"></div>
+              <div class="footer__container">
+                <div class="footer__grid">
+                  <div class="footer__brand-column">
+                    <div class="footer__brand-wrapper">
+                      <div class="footer__logo-container">
+                        <span class="footer__logo-text">James Kelly</span>
+                        <div
+                          aria-hidden="true"
+                          class="footer__logo-accent"
+                        ></div>
+                      </div>
+                      <p class="footer__brand-tagline">
+                        <span>
+                          Crafting digital experiences through data driven
+                          design and creative
+                        </span>
+                        <br />
+                        <span>marketing solutions.</span>
+                        Crafting digital experiences through data-driven design
+                        and creative marketing solutions.
+                      </p>
+                      <div class="footer__social-links">
+                        <a
+                          href="https://www.linkedin.com/in/james-kelly-260073359/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <div
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            aria-label="Follow us on LinkedIn"
+                            class="footer__social-link"
+                          >
+                            <svg
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                                ></path>
+                                <circle r="2" cx="4" cy="4"></circle>
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                        <a
+                          href="https://instagram.com"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          <div
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            aria-label="Follow us on Instagram"
+                            class="footer__social-link"
+                          >
+                            <svg
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <rect
+                                  x="2"
+                                  y="2"
+                                  rx="5"
+                                  ry="5"
+                                  width="20"
+                                  height="20"
+                                ></rect>
+                                <path
+                                  d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                                ></path>
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                        <a href="mailto:hello@scrollspace.com?subject=">
+                          <div
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            aria-label="Email us"
+                            class="footer__social-link"
+                          >
+                            <svg
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                                ></path>
+                                <rect
+                                  x="2"
+                                  y="4"
+                                  rx="2"
+                                  width="20"
+                                  height="16"
+                                ></rect>
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <nav aria-label="Quick links" class="footer__nav-column">
+                    <h3 class="footer__nav-title">Quick Links</h3>
+                    <ul class="footer__nav-list">
+                      <li class="footer__nav-item">
+                        <a href="#home">
+                          <div class="footer__nav-link"><span>Home</span></div>
+                        </a>
+                      </li>
+                      <li class="footer__nav-item">
+                        <a href="#about">
+                          <div class="footer__nav-link"><span>About</span></div>
+                        </a>
+                      </li>
+                      <li class="footer__nav-item">
+                        <a href="#skills">
+                          <div class="footer__nav-link">
+                            <span>Skills</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="footer__nav-item">
+                        <a href="resume.html">
+                          <div class="footer__nav-link">
+                            <span>Resume</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <nav aria-label="Portfolio links" class="footer__nav-column">
+                    <h3 class="footer__nav-title">Portfolio</h3>
+                    <ul class="footer__nav-list">
+                      <li class="footer__nav-item">
+                        <a href="#portfolio">
+                          <div class="footer__nav-link">
+                            <span>All Projects</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="footer__nav-item">
+                        <a href="#portfolio">
+                          <div class="footer__nav-link">
+                            <span>Data Analytics</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="footer__nav-item">
+                        <a href="#portfolio">
+                          <div class="footer__nav-link">
+                            <span>Marketing</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="footer__nav-item">
+                        <a href="#contact">
+                          <div class="footer__nav-link">
+                            <span>Get in Touch</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="footer__contact-column">
+                    <h3 class="footer__nav-title">Get in Touch</h3>
+                    <div class="footer__contact-wrapper">
+                      <div class="footer__contact-item">
+                        <div aria-hidden="true" class="footer__contact-icon">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                              ></path>
+                              <rect
+                                x="2"
+                                y="4"
+                                rx="2"
+                                width="20"
+                                height="16"
+                              ></rect>
+                            </g>
+                          </svg>
+                        </div>
+                        <a href="mailto:hello@scrollspace.com?subject=">
+                          <div class="footer__contact-link">
+                            <span>
+                              <span>James_Kelly12@outlook.com</span>
+                              <br />
+                            </span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="footer__contact-item">
+                        <div aria-hidden="true" class="footer__contact-icon">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                        <a href="tel:+1234567890">
+                          <div class="footer__contact-link">
+                            <span>07394 366629</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div aria-hidden="true" class="footer__divider">
+                  <div class="footer__divider-line"></div>
+                </div>
+                <div class="footer__bottom">
+                  <div
+                    class="footer-footerbottom-content footer__bottom-content"
+                  ></div>
+                  <a href="#home">
+                    <div aria-label="Back to top" class="footer__back-to-top">
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="m5 12l7-7l7 7m-7 7V5"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <span class="footer__back-to-top-text">Top</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </footer-wrapper>
+      </div>
+    </div>
+  </body>
+</html>

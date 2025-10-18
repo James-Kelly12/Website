@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Functional Able Goat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="../style.css" />
+    <div>
+      <link href="./footer.css" rel="stylesheet" />
+      <div class="footer-container1">
+        <div class="footer-container2">
+          <div class="footer-container3">
+            <style>
+                      @keyframes footer-heart-pulse {0%,100% {transform: scale(1);}
+              50% {transform: scale(1.15);}}
+            </style>
+          </div>
+        </div>
+        <div class="footer-container4">
+          <div class="footer-container5">
+            <style>
+              @media (prefers-reduced-motion: reduce) {
+              .footer__social-link, .footer__social-link::before, .footer__social-link svg, .footer__nav-link, .footer__nav-link::before, .footer__contact-item, .footer__contact-icon, .footer__contact-link, .footer__bottom-link, .footer__back-to-top, .footer__back-to-top::before, .footer__back-to-top svg {
+                transition: none;
+              }
+              .footer__heart-icon {
+                animation: none;
+              }
+              }
+            </style>
+          </div>
+        </div>
+        <div class="footer-container6">
+          <div class="footer-container7">
+            <script defer="" data-name="footer">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  // Smooth scroll behavior for back-to-top and footer links
+                  const footer = document.getElementById("footer")
+                  const backToTopButton = footer.querySelector(".footer__back-to-top")
+                  const footerLinks = footer.querySelectorAll('a[href^="#"]')
+
+                  // Handle all anchor links with smooth scroll
+                  footerLinks.forEach((link) => {
+                    link.addEventListener("click", function (e) {
+                      const href = this.getAttribute("href")
+
+                      // Only handle internal anchor links
+                      if (href && href.startsWith("#")) {
+                        const targetId = href.substring(1)
+                        const targetElement = document.getElementById(targetId)
+
+                        if (targetElement) {
+                          e.preventDefault()
+                          targetElement.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                          })
+
+                          // Update URL without jumping
+                          if (history.pushState) {
+                            history.pushState(null, null, href)
+                          }
+
+                          // Focus management for accessibility
+                          targetElement.focus({ preventScroll: true })
+                        }
+                      }
+                    })
+                  })
+
+                  // Enhanced back-to-top button with scroll visibility
+                  let lastScrollTop = 0
+                  const showBackToTopThreshold = 500
+
+                  function handleBackToTopVisibility() {
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+
+                    if (scrollTop > showBackToTopThreshold) {
+                      backToTopButton.style.opacity = "1"
+                      backToTopButton.style.pointerEvents = "auto"
+                    } else {
+                      backToTopButton.style.opacity = "0.7"
+                      backToTopButton.style.pointerEvents = "auto"
+                    }
+
+                    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop
+                  }
+
+                  // Throttle scroll events for performance
+                  let scrollTimeout
+                  window.addEventListener(
+                    "scroll",
+                    function () {
+                      if (scrollTimeout) {
+                        window.cancelAnimationFrame(scrollTimeout)
+                      }
+
+                      scrollTimeout = window.requestAnimationFrame(function () {
+                        handleBackToTopVisibility()
+                      })
+                    },
+                    { passive: true }
+                  )
+
+                  // Initialize visibility on load
+                  handleBackToTopVisibility()
+
+                  // Add keyboard navigation enhancement for social links
+                  const socialLinks = footer.querySelectorAll(".footer__social-link")
+                  socialLinks.forEach((link, index) => {
+                    link.addEventListener("keydown", function (e) {
+                      if (e.key === "ArrowRight" && index < socialLinks.length - 1) {
+                        e.preventDefault()
+                        socialLinks[index + 1].focus()
+                      } else if (e.key === "ArrowLeft" && index > 0) {
+                        e.preventDefault()
+                        socialLinks[index - 1].focus()
+                      }
+                    })
+                  })
+
+                  // Intersection Observer for footer entrance animation
+                  const footerObserver = new IntersectionObserver(
+                    (entries) => {
+                      entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                          entry.target.style.opacity = "1"
+                          entry.target.style.transform = "translateY(0)"
+                        }
+                      })
+                    },
+                    {
+                      threshold: 0.1,
+                      rootMargin: "0px 0px -50px 0px",
+                    }
+                  )
+
+                  // Observe footer sections with stagger effect
+                  const footerSections = footer.querySelectorAll(
+                    ".footer__brand-column, .footer__nav-column, .footer__contact-column"
+                  )
+                  footerSections.forEach((section, index) => {
+                    section.style.opacity = "0"
+                    section.style.transform = "translateY(1.5rem)"
+                    section.style.transition = `opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1) ${
+                      index * 0.1
+                    }s, transform 0.6s cubic-bezier(0.4, 0, 0.2, 1) ${index * 0.1}s`
+                    footerObserver.observe(section)
+                  })
+                })()
+              });
+            </script>
+          </div>
+        </div>
+        <footer id="footer" class="footer">
+          <div aria-hidden="true" class="footer__background-pattern"></div>
+          <div class="footer__container">
+            <div class="footer__grid">
+              <div class="footer__brand-column">
+                <div class="footer__brand-wrapper">
+                  <div class="footer__logo-container">
+                    <span class="footer__logo-text">James Kelly</span>
+                    <div aria-hidden="true" class="footer__logo-accent"></div>
+                  </div>
+                  <p class="footer__brand-tagline">
+                    <span>
+                      Crafting digital experiences through data driven design
+                      and creative
+                    </span>
+                    <br />
+                    <span>marketing solutions.</span>
+                    Crafting digital experiences through data-driven design and
+                    creative marketing solutions.
+                  </p>
+                  <div class="footer__social-links">
+                    <a
+                      href="https://linkedin.com"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <div
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        aria-label="Follow us on LinkedIn"
+                        class="footer__social-link"
+                      >
+                        <svg
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                            ></path>
+                            <circle r="2" cx="4" cy="4"></circle>
+                          </g>
+                        </svg>
+                      </div>
+                    </a>
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <div
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        aria-label="Follow us on Instagram"
+                        class="footer__social-link"
+                      >
+                        <svg
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <rect
+                              x="2"
+                              y="2"
+                              rx="5"
+                              ry="5"
+                              width="20"
+                              height="20"
+                            ></rect>
+                            <path
+                              d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                            ></path>
+                          </g>
+                        </svg>
+                      </div>
+                    </a>
+                    <a href="mailto:hello@scrollspace.com?subject=">
+                      <div
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        aria-label="Email us"
+                        class="footer__social-link"
+                      >
+                        <svg
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                            ></path>
+                            <rect
+                              x="2"
+                              y="4"
+                              rx="2"
+                              width="20"
+                              height="16"
+                            ></rect>
+                          </g>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <nav aria-label="Quick links" class="footer__nav-column">
+                <h3 class="footer__nav-title">Quick Links</h3>
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="#home">
+                      <div class="footer__nav-link"><span>Home</span></div>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#about">
+                      <div class="footer__nav-link"><span>About</span></div>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#skills">
+                      <div class="footer__nav-link"><span>Skills</span></div>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#resume">
+                      <div class="footer__nav-link"><span>Resume</span></div>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav aria-label="Portfolio links" class="footer__nav-column">
+                <h3 class="footer__nav-title">Portfolio</h3>
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="#portfolio">
+                      <div class="footer__nav-link">
+                        <span>All Projects</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#portfolio">
+                      <div class="footer__nav-link">
+                        <span>Data Analytics</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#portfolio">
+                      <div class="footer__nav-link"><span>Marketing</span></div>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#contact">
+                      <div class="footer__nav-link">
+                        <span>Get in Touch</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer__contact-column">
+                <h3 class="footer__nav-title">Get in Touch</h3>
+                <div class="footer__contact-wrapper">
+                  <div class="footer__contact-item">
+                    <div aria-hidden="true" class="footer__contact-icon">
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                          ></path>
+                          <rect
+                            x="2"
+                            y="4"
+                            rx="2"
+                            width="20"
+                            height="16"
+                          ></rect>
+                        </g>
+                      </svg>
+                    </div>
+                    <a href="mailto:hello@scrollspace.com?subject=">
+                      <div class="footer__contact-link">
+                        <span>
+                          <span>James_Kelly12@outlook.com</span>
+                          <br />
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="footer__contact-item">
+                    <div aria-hidden="true" class="footer__contact-icon">
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                    <a href="tel:+1234567890">
+                      <div class="footer__contact-link">
+                        <span>07394 366629</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div aria-hidden="true" class="footer__divider">
+              <div class="footer__divider-line"></div>
+            </div>
+            <div class="footer__bottom">
+              <div
+                class="footer-footerbottom-content footer__bottom-content"
+              ></div>
+              <a href="#home">
+                <div aria-label="Back to top" class="footer__back-to-top">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="m5 12l7-7l7 7m-7 7V5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                  <span class="footer__back-to-top-text">Top</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
