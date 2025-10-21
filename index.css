@@ -1,10 +1,3 @@
-.navigationroot-class-name {
-  position: relative;
-  z-index: 1000;
-  display: block; /* or flex/contents depending on layout */
-}
-
-
 .navigation-wrapper {
   display: contents;
 }
